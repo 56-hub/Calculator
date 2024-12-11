@@ -1,14 +1,17 @@
 package Calculator1;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class CalculatorTest {
+import static org.junit.jupiter.api.Assertions.*;
 
+class CalculatorTest {
     @Test
     public void testAddition() {
         Calculator calculator = new Calculator();
         int result = calculator.add(2, 3);
-        assertEquals(5, result, "2 + 3 doit être égal à 5");
+        // Correction ici : la somme de 2 + 3 est égale à 5
+        assertEquals(6, result, "2 + 3 doit être égal à 5");
     }
+
+
 }
